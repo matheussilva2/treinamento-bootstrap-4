@@ -3,4 +3,4 @@
 mostro exemplos.</p>
 
 <h2>Como eu posso contribuir? </h2>
-<p> Você pode contribuir enviando ideias de exemplos ou criando páginas de exemplos, toda contribuição é bem-vinda!</p>
+<p> Você pode contribuir enviando ideias de exemplos ou criando páginas de exemplos ou até alterações nas páginas. Toda contribuição é bem-vinda! :heart:</p>
