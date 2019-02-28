@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery - Sintaxe</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="_css/bootstrap.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=0, shrink-to-fit=no">
+</head>
+<body class="bg-light">
+	<header class="container-fluid bg-primary text-light">
+		<h2>JQuery - Sintaxe</h2>
+	</header>
+	<main class="container bg-white">
+		<p>A sintaxe básica do JQuery é $(seletor).acao();</p>
+		<ul>
+			<li>$ é o caractere para chamar o JQuery</li>
+			<li>O (seletor) é usado para achar elementos html</li>
+			<li>A acao() é a ação JQuery que atuará no elemento</li>
+		</ul>
+		<p>Exemplos:<br/>
+			<code>$(this).hide()</code> - Esconde o elemento atual<br/>
+			<code>$("p").hide()</code> - Esconde todos os elementos &lt;p&gt; da página;<br/>
+			<code>$(".test").hide()</code> - Esconde todos os elementos da class test<br/>
+			<code>$("#test").hide()</code> - Esconde todos os elementos do id test
+		</p>
+		<h2>O evento document.ready</h2>
+		<p>
+			Este evento faz alguma ação quando a página termina de carregar (Você recebeu um alert quando a página carregou).
+		</p>
+		<pre><code>
+$(document).ready(function{
+	//código;
+});
+		</code></pre>
+	</main>
+	<script type="text/javascript" src="_js/jquery-3.3.1.js"></script>
+	<script>
+		$(document).ready(function(){
+			alert("A página terminou de carregar :3 (Explicação deste event no final do documento");
+		});
+	</script>
+</body>
+</html>

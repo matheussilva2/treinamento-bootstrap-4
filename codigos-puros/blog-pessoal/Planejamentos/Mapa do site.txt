@@ -1,0 +1,7 @@
+Mapa do site
+
+Inicio
+Categorias (Dropdown)
+Sobre
+Contato
+Redes sociais
