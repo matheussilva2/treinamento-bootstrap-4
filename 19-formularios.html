@@ -21,7 +21,10 @@
 			<li>Formulário em empilhado (largura completo)</li>
 			<li>Linear</li>
 		</ul>
-		<h2>Largura completa</h2>
+
+		<hr>
+		<h2>Formulário Empilhado</h2>
+		<p>Neste estilo de formulário, crie um <code>div.form-group</code>. Cada .form-group indica um elemento da pilha.</p>
 		<form action="#">
 			<div class="form-group">
 				<label for="email">Email: </label>
@@ -36,8 +39,33 @@
 					<input type="checkbox" class="form-check-input"> Lembrar Senha
 				</label>
 			</div>
-			<button type="submit" class="btn btn-primary">Submit</button>
+			<button type="submit" class="btn btn-success">Submit</button>
 		</form>
+	<!--Exemplo-->
+		<button type="button" class="btn btn-bootstrap text-white my-3" data-target="#exemplo1" data-toggle="collapse">Mostrar código</button>
+		<div class="container bg-dark px-4 pt-2 my-2 collapse" id="exemplo1">
+			<span class="text-light">Código</span>
+
+			<code><pre style="font-size: 13pt;" class="text-light">
+&lt;form action="#"&gt;
+	&lt;div class="form-group"&gt;
+		&lt;label for="email"&gt;Email: &lt;/label&gt;
+		&lt;input type="email" class="form-control" id="email"&gt;
+	&lt;/div&gt;
+	&lt;div class="form-group"&gt;
+		&lt;label for="pwd"&gt;Senha: &lt;/label&gt;
+		&lt;input type="password" class="form-control" id="pwd"&gt;
+	&lt;/div&gt;
+	&lt;div class="form-group form-check"&gt;
+		&lt;label class="form-check-label"&gt;
+			&lt;input type="checkbox" class="form-check-input"&gt; Lembrar Senha
+		&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+				</pre></code>
+		</div>
+	<!-- fim exemplo -->
 		<hr>
 		<h2>Formulário Linear</h2>
 		<p>Para fazer um formulário linear, adicione a class <code>.form-inline</code>.</p>
@@ -52,9 +80,72 @@
 					<input type="checkbox" class="form-check-input">Lembrar Senha
 				</label>
 			</div>
-			<button type="submit" class="btn btn-bootstrap text-white">Enviar</button>
+			<button type="submit" class="btn btn-success">Enviar</button>
 		</form>
+
+	<!--Exemplo-->
+		<button type="button" class="btn btn-bootstrap text-light my-3" data-target="#exemplo2" data-toggle="collapse">Mostrar código</button>
+		<div class="container bg-dark px-4 pt-2 my-2 collapse" id="exemplo2">
+			<span class="text-light">Código</span>
+
+			<code><pre style="font-size: 13pt;" class="text-light">
+&lt;form action="#" class="form-inline"&gt;
+	&lt;label for="email"&gt;Email: &lt;/label&gt;
+	&lt;input type="email" class="form-control" id="email"&gt;
+	&lt;label for="pwd"&gt;Senha: &lt;/label&gt;
+	&lt;input type="password" class="form-control" id="pwd"&gt;
+	&lt;div class="form-check"&gt;
+		&lt;label class="form-check-label"&gt;
+			&lt;input type="checkbox" class="form-check-input"&gt;Lembrar Senha
+		&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;button type="submit" class="btn btn-bootstrap text-white"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;
+				</pre></code>
+		</div>
+	<!-- fim exemplo -->
+
+		<hr>
+
+		<h2>Formulário Linear com Utilidades</h2>
+		<p>O formulário linear parece um pouco "comprimido". No exemplo a seguir, adiciono uma margem à direita para todos os dispositivos e uma margem embaixo para caso não houver espaço suficiente, ser mostrado verticalmente (<code>.mb-2 .mr-sm-2</code>).</p>
+		<form action="#" class="form-inline">
+			<label for="email" class="mr-sm-2">Email: </label>
+			<input type="email" id="email" class="form-control mb-2 mr-sm-2">
+			<label for="pwd" class="mr-sm-2">Senha: </label>
+			<input type="password" id="pwd" class="form-control mr-sm-2 mb-2">
+			<div class="form-check mb-2 mr-sm-2">
+				<label class="form-check-label">
+					<input type="checkbox" class="form-check-input">Lembrar Senha
+				</label>
+			</div>
+			<button class="btn btn-success mb-2">Enviar</button>
+		</form>
+	<!--Exemplo-->
+		<button type="button" class="btn btn-bootstrap text-light my-3" data-target="#exemplo3" data-toggle="collapse">Mostrar código</button>
+		<div class="container bg-dark px-4 pt-2 my-2 collapse" id="exemplo3">
+			<span class="text-light">Código</span>
+
+			<code><pre style="font-size: 13pt;" class="text-light">
+&lt;form action="#" class="form-inline"&gt;
+	&lt;label for="email" class="mr-sm-2"&gt;Email: &lt;/label&gt;
+	&lt;input type="email" id="email" class="form-control mb-2 mr-sm-2"&gt;
+	&lt;label for="pwd" class="mr-sm-2"&gt;Senha: &lt;/label&gt;
+	&lt;input type="password" id="pwd" class="form-control mr-sm-2 mb-2"&gt;
+	&lt;div class="form-check mb-2 mr-sm-2"&gt;
+		&lt;label class="form-check-label"&gt;
+			&lt;input type="checkbox" class="form-check-input"&gt;Lembrar Senha
+		&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;button class="btn btn-success mb-2"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;
+				</pre></code>
+		</div>
+	<!-- fim exemplo -->
 	</main>
 
+	<script type="text/javascript" src="_js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="_js/popper.min.js"></script>
+	<script type="text/javascript" src="_js/bootstrap.js"></script>
 </body>
 </html>
