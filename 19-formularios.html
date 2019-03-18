@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Bootstrap - Formulários</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="_css/bootstrap.css">
+	<link rel="stylesheet" href="_css/style.css">
+</head>
+<body>
+	<header class="navbar bg-bootstrap">
+		<a class="navbar-brand text-light" href="#">Bootstrap 4</a>
+	</header>
+	<main class="container bg-light my-2 py-2 px-5">
+		<h1>Formulários</h1>
+		<p>Por padrão, o bootstrap trás estilizações para formulários. Os elementos <code>input</code>, <code>textarea</code> e <code>select</code> com a class <code>.form-control</code> ocupam 100% da largura</p>
+		<h2>Layout de formulários</h2>
+		<p>O bootstrap possui dois tipos de layout de formulários:</p>
+		<ul>
+			<li>Formulário em empilhado (largura completo)</li>
+			<li>Linear</li>
+		</ul>
+		<h2>Largura completa</h2>
+		<form action="#">
+			<div class="form-group">
+				<label for="email">Email: </label>
+				<input type="email" class="form-control" id="email">
+			</div>
+			<div class="form-group">
+				<label for="pwd">Senha: </label>
+				<input type="password" class="form-control" id="pwd">
+			</div>
+			<div class="form-group form-check">
+				<label class="form-check-label">
+					<input type="checkbox" class="form-check-input"> Lembrar Senha
+				</label>
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+		<hr>
+		<h2>Formulário Linear</h2>
+		<p>Para fazer um formulário linear, adicione a class <code>.form-inline</code>.</p>
+		<strong>OBS: Este layout apenas funciona em telas maiores do que 576px de largura. Em telas menores, o formulário será empilhado verticalmente.</strong>
+		<form action="#" class="form-inline">
+			<label for="email">Email: </label>
+			<input type="email" class="form-control" id="email">
+			<label for="pwd">Senha: </label>
+			<input type="password" class="form-control" id="pwd">
+			<div class="form-check">
+				<label class="form-check-label">
+					<input type="checkbox" class="form-check-input">Lembrar Senha
+				</label>
+			</div>
+			<button type="submit" class="btn btn-bootstrap text-white">Enviar</button>
+		</form>
+	</main>
+
+</body>
+</html>
