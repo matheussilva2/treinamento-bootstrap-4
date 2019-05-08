@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap 4 - Modal</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<style>
+		.bg-bootstrap{
+			background-color: #7952B3;
+		}
+		p{
+			text-indent: 5%;
+		}
+		.btn-bootstrap{
+			background-color: #7952B3;
+		}
+	</style>
+</head>
+<body>
+	<header class="navbar bg-bootstrap">
+		<a class="navbar-brand text-light" href="#">Bootstrap 4</a>
+	</header>
+	<article class="container bg-light mt-4 py-4 px-4 mb-3">
+		<header>
+			<h1>Modal</h1>
+		</header>
+		<hr>
+		<div>
+			<h2 class="my-3">Modal Básico</h2>
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+				Abrir Model
+			</button>
+
+			<div class="modal" id="myModal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+
+						<!-- Modal Header -->
+						<div class="modal-header">
+							<h4 class="modal-title">Modal Heading</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+
+						<!-- Modal footer -->
+						<div class="modal-body">
+							Corpo modal...
+						</div>
+
+						<!-- Model footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--Exemplo-->
+				<button type="button" class="btn btn-bootstrap text-white my-3" data-target="#exemplo1" data-toggle="collapse">Mostrar código</button>
+				<div class="container bg-dark px-4 pt-2 my-2 collapse" id="exemplo1">
+
+					<code><pre style="font-size: 13pt;" class="text-light">
+	&lt;div class="modal" id="myModal"&gt;
+		&lt;div class="modal-dialog"&gt;
+			&lt;div class="modal-content"&gt;
+
+				&lt;!-- Modal Header --&gt;
+				&lt;div class="modal-header"&gt;
+					&lt;h4 class="modal-title"&gt;Modal Heading&lt;/h4&gt;
+					&lt;button type="button" class="close" data-dismiss="modal"&gt;&times;&lt;/button&gt;
+				&lt;/div&gt;
+
+				&lt;!-- Modal footer --&gt;
+				&lt;div class="modal-body"&gt;
+					Corpo modal...
+				&lt;/div&gt;
+
+				&lt;!-- Model footer --&gt;
+				&lt;div class="modal-footer"&gt;
+					&lt;button type="button" class="btn btn-danger" data-dismiss="modal"&gt;Close&lt;/button&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+					</pre></code>
+			</div>
+			<!-- fim exemplo -->
+		</div>
+
+		<hr>
+
+		<div>
+			<h2>Adicionar animação</h2>
+			<p>Use a class <code>.fade</code> no div principal para adicionar um efeito de fade quando abrir ou fechar o modal.</p>
+			<p>Modal com animação</p>
+			<p class="bg-white"><code>&lt;div class="modal fade"&gt;&lt;/div&gt;</code></p>
+			<p>Modal sem animação</p>
+			<p class="bg-white"><code>&lt;div class="modal"&gt;&lt;/div&gt;</code></p>
+			<button type="button" class="btn btn-primary my-3" data-toggle="modal" data-target="#myModal2">
+				Abrir Model
+			</button>
+
+			<div class="modal fade" id="myModal2">
+				<div class="modal-dialog">
+					<div class="modal-content">
+
+						<!-- Modal Header -->
+						<div class="modal-header">
+							<h4 class="modal-title">Modal com Fade</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+
+						<!-- Modal footer -->
+						<div class="modal-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi deleniti facilis officiis voluptatibus, velit doloremque, est culpa similique veniam alias pariatur numquam beatae.
+						</div>
+
+						<!-- Model footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<hr>
+
+		<div>
+			<h2>Tamanho do Modal</h2>
+			<p>Para configurar o tamanho do modal, coloque a class <code>.modal-* sm/lg/xl</code> no mesmo elemento que está a class <code>.modal-dialog</code></p>
+
+			<span class="h4">Modal Pequeno</span><br>
+			<p class="bg-white"><code>&lt;div class="modal-dialog modal-sm"&gt;</code></p>
+			<span class="h4">Modal Largo</span><br>
+			<p class="bg-white"><code>&lt;div class="modal-dialog modal-lg"&gt;</code></p>
+			<span class="h4">Modal Extra Largo</span><br>
+			<p class="bg-white"><code>&lt;div class="modal-dialog modal-xl"&gt;</code></p>
+			<button type="button" class="btn btn-primary my-3" data-toggle="modal" data-target="#myModal3">
+				Abrir Model
+			</button>
+
+			<div class="modal fade" id="myModal3">
+				<div class="modal-dialog modal-xl">
+					<div class="modal-content">
+
+						<!-- Modal Header -->
+						<div class="modal-header">
+							<h4 class="modal-title">Modal Extra Largo</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+
+						<!-- Modal footer -->
+						<div class="modal-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi deleniti facilis officiis voluptatibus, velit doloremque, est culpa similique veniam alias pariatur numquam beatae.
+						</div>
+
+						<!-- Model footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<hr>
+
+		<div>
+			<h2>Modal Centralizado</h2>
+			<p>Centralize seu model verticalmente e horizontalmente na página adicionando a class <code>.modal-dialog-centered</code> no elemento com a class <code>.modal-dialog</code>.</p>
+			<p class="bg-white"><code>&lt;code class="modal-dialog modal-dialog-centered"&gt;</code></p>
+
+			<button type="button" class="btn btn-primary my-3" data-toggle="modal" data-target="#myModal4">
+				Abrir Model
+			</button>
+
+			<div class="modal fade" id="myModal4">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+
+						<!-- Modal Header -->
+						<div class="modal-header">
+							<h4 class="modal-title">Modal Centralizado</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+
+						<!-- Modal footer -->
+						<div class="modal-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi deleniti facilis officiis voluptatibus, velit doloremque, est culpa similique veniam alias pariatur numquam beatae.
+						</div>
+
+						<!-- Model footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<hr>
+
+		<div>
+			<h2>Modal Rolável</h2>
+			<p>Se seu modal terá muito conteúdo dentro dele, você pode ativar a rolagem com a class <code>.modal-dialog-scrollable</code> adicionando-a no mesmo elemento que está <code>.modal-dialog</code>.</p>
+			<p class="bg-white"><code>&lt;code class="modal-dialog modal-dialog-scrollable"&gt;</code></p>
+
+			<button type="button" class="btn btn-primary my-3" data-toggle="modal" data-target="#myModal5">
+				Abrir Model
+			</button>
+
+			<div class="modal fade" id="myModal5">
+				<div class="modal-dialog modal-dialog-scrollable">
+					<div class="modal-content">
+
+						<!-- Modal Header -->
+						<div class="modal-header">
+							<h4 class="modal-title">Modal Rolável</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+
+						<!-- Modal footer -->
+						<div class="modal-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi deleniti facilis officiis voluptatibus, velit doloremque, est culpa similique veniam alias pariatur numquam beatae.
+
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit enim, repellat exercitationem harum velit atque explicabo sit dolorum ipsa. Laboriosam quia nesciunt dolor nam esse perferendis nemo voluptatem, reiciendis, sit.
+
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit enim, repellat exercitationem harum velit atque explicabo sit dolorum ipsa. Laboriosam quia nesciunt dolor nam esse perferendis nemo voluptatem, reiciendis, sit.
+
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit enim, repellat exercitationem harum velit atque explicabo sit dolorum ipsa. Laboriosam quia nesciunt dolor nam esse perferendis nemo voluptatem, reiciendis, sit.
+
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi deleniti facilis officiis voluptatibus, velit doloremque, est culpa similique veniam alias pariatur numquam beatae.
+
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit enim, repellat exercitationem harum velit atque explicabo sit dolorum ipsa. Laboriosam quia nesciunt dolor nam esse perferendis nemo voluptatem, reiciendis, sit.
+
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit enim, repellat exercitationem harum velit atque explicabo sit dolorum ipsa. Laboriosam quia nesciunt dolor nam esse perferendis nemo voluptatem, reiciendis, sit.
+
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit enim, repellat exercitationem harum velit atque explicabo sit dolorum ipsa. Laboriosam quia nesciunt dolor nam esse perferendis nemo voluptatem, reiciendis, sit.
+
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi deleniti facilis officiis voluptatibus, velit doloremque, est culpa similique veniam alias pariatur numquam beatae.
+
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit enim, repellat exercitationem harum velit atque explicabo sit dolorum ipsa. Laboriosam quia nesciunt dolor nam esse perferendis nemo voluptatem, reiciendis, sit.
+
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit enim, repellat exercitationem harum velit atque explicabo sit dolorum ipsa. Laboriosam quia nesciunt dolor nam esse perferendis nemo voluptatem, reiciendis, sit.
+
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit enim, repellat exercitationem harum velit atque explicabo sit dolorum ipsa. Laboriosam quia nesciunt dolor nam esse perferendis nemo voluptatem, reiciendis, sit.
+						</div>
+
+						<!-- Model footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</article>
+	<!--Scripts imports -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	</body>
+</html>
